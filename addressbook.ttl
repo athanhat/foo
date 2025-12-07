@@ -1,0 +1,99 @@
+@prefix : <http://healis.eu/ns/test1/> .
+@prefix ab: <http://healis.eu/ns/test1/addressbook#> .
+
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+@base <http://healis.eu/ns/test1/> .
+
+
+: rdf:type owl:Ontology .
+
+#################################################################
+#    Classes
+#################################################################
+
+ab:person rdf:type owl:Class .
+
+ab:address rdf:type owl:Class .
+
+
+#################################################################
+#    Object properties
+#################################################################
+
+ab:hasAddress rdf:type owl:ObjectProperty ;
+        rdfs:domain ab:person ;
+        rdfs:range ab:address .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+ab:email rdf:type owl:DatatypeProperty ;
+        rdfs:domain ab:person ;
+        rdfs:range xsd:string .
+
+ab:firstName rdf:type owl:DatatypeProperty ;
+        rdfs:domain ab:person ; 
+        rdfs:range xsd:string .
+
+
+ab:homeTel rdf:type owl:DatatypeProperty ;
+        rdfs:domain ab:person ;
+        rdfs:range xsd:string .
+
+
+ab:lastName rdf:type owl:DatatypeProperty ;
+        rdfs:domain ab:person ;
+        rdfs:range xsd:string .
+
+ab:street rdf:type owl:DatatypeProperty ;
+        rdfs:domain ab:address ;
+        rdfs:range xsd:string .
+
+ab:city rdf:type owl:DatatypeProperty ;
+        rdfs:domain ab:address ;
+        rdfs:range xsd:string .
+
+ab:postalCode rdf:type owl:DatatypeProperty ;
+        rdfs:domain ab:address ;
+        rdfs:range xsd:string .
+
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+ab:i0432 rdf:type owl:NamedIndividual, ab:person ;
+        ab:email "richard49@hotmail.com" ;
+        ab:firstName "Richard" ;
+        ab:homeTel "(229) 276-5135" ;
+        ab:lastName "Mutt" .
+
+
+ab:i8301 rdf:type owl:NamedIndividual, ab:person ;
+        ab:email "c.ellis@usairwaysgroup.com" , "craigellis@yahoo.com" ;
+        ab:firstName "Craig" ;
+        ab:lastName "Ellis" .
+
+
+ab:i9771 rdf:type owl:NamedIndividual, ab:person ;
+        ab:email "cindym@gmail.com" ;
+        ab:firstName "Cindy" ;
+        ab:homeTel "(245) 646-5488" ;
+        ab:lastName "Marshall" .
+
+
+ab:addr001 rdf:type owl:NamedIndividual , ab:address ;
+         ab:street "123 Maple Rd" ;
+         ab:city "Springfield" ;
+         ab:postalCode "12345" .
+
+
+ab:i0432 ab:hasAddress ab:addr001 .
