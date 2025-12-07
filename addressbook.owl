@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:ab="http://healis.eu/ns/test1/addressbook#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xml="http://www.w3.org/XML/1998/namespace" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns="http://healis.eu/ns/test1/">
+  <rdf:Description rdf:about="http://healis.eu/ns/test1/">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://healis.eu/ns/test1/addressbook#person">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://healis.eu/ns/test1/addressbook#address">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://healis.eu/ns/test1/addressbook#hasAddress">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://healis.eu/ns/test1/addressbook#hasAddress">
+    <rdfs:domain rdf:resource="http://healis.eu/ns/test1/addressbook#person"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://healis.eu/ns/test1/addressbook#hasAddress">
+    <rdfs:range rdf:resource="http://healis.eu/ns/test1/addressbook#address"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://healis.eu/ns/test1/addressbook#email">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://healis.eu/ns/test1/addressbook#email">
+    <rdfs:domain rdf:resource="http://healis.eu/ns/test1/addressbook#person"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://healis.eu/ns/test1/addressbook#email">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://healis.eu/ns/test1/addressbook#firstName">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://healis.eu/ns/test1/addressbook#firstName">
+    <rdfs:domain rdf:resource="http://healis.eu/ns/test1/addressbook#person"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://healis.eu/ns/test1/addressbook#firstName">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://healis.eu/ns/test1/addressbook#homeTel">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://healis.eu/ns/test1/addressbook#homeTel">
+    <rdfs:domain rdf:resource="http://healis.eu/ns/test1/addressbook#person"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://healis.eu/ns/test1/addressbook#homeTel">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://healis.eu/ns/test1/addressbook#lastName">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://healis.eu/ns/test1/addressbook#lastName">
+    <rdfs:domain rdf:resource="http://healis.eu/ns/test1/addressbook#person"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://healis.eu/ns/test1/addressbook#lastName">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://healis.eu/ns/test1/addressbook#street">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://healis.eu/ns/test1/addressbook#street">
+    <rdfs:domain rdf:resource="http://healis.eu/ns/test1/addressbook#address"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://healis.eu/ns/test1/addressbook#street">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://healis.eu/ns/test1/addressbook#city">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://healis.eu/ns/test1/addressbook#city">
+    <rdfs:domain rdf:resource="http://healis.eu/ns/test1/addressbook#address"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://healis.eu/ns/test1/addressbook#city">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://healis.eu/ns/test1/addressbook#postalCode">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://healis.eu/ns/test1/addressbook#postalCode">
+    <rdfs:domain rdf:resource="http://healis.eu/ns/test1/addressbook#address"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://healis.eu/ns/test1/addressbook#postalCode">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://healis.eu/ns/test1/addressbook#i0432">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://healis.eu/ns/test1/addressbook#i0432">
+    <rdf:type rdf:resource="http://healis.eu/ns/test1/addressbook#person"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://healis.eu/ns/test1/addressbook#i0432">
+    <ab:email>richard49@hotmail.com</ab:email>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://healis.eu/ns/test1/addressbook#i0432">
+    <ab:firstName>Richard</ab:firstName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://healis.eu/ns/test1/addressbook#i0432">
+    <ab:homeTel>(229) 276-5135</ab:homeTel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://healis.eu/ns/test1/addressbook#i0432">
+    <ab:lastName>Mutt</ab:lastName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://healis.eu/ns/test1/addressbook#i8301">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://healis.eu/ns/test1/addressbook#i8301">
+    <rdf:type rdf:resource="http://healis.eu/ns/test1/addressbook#person"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://healis.eu/ns/test1/addressbook#i8301">
+    <ab:email>c.ellis@usairwaysgroup.com</ab:email>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://healis.eu/ns/test1/addressbook#i8301">
+    <ab:email>craigellis@yahoo.com</ab:email>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://healis.eu/ns/test1/addressbook#i8301">
+    <ab:firstName>Craig</ab:firstName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://healis.eu/ns/test1/addressbook#i8301">
+    <ab:lastName>Ellis</ab:lastName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://healis.eu/ns/test1/addressbook#i9771">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://healis.eu/ns/test1/addressbook#i9771">
+    <rdf:type rdf:resource="http://healis.eu/ns/test1/addressbook#person"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://healis.eu/ns/test1/addressbook#i9771">
+    <ab:email>cindym@gmail.com</ab:email>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://healis.eu/ns/test1/addressbook#i9771">
+    <ab:firstName>Cindy</ab:firstName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://healis.eu/ns/test1/addressbook#i9771">
+    <ab:homeTel>(245) 646-5488</ab:homeTel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://healis.eu/ns/test1/addressbook#i9771">
+    <ab:lastName>Marshall</ab:lastName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://healis.eu/ns/test1/addressbook#addr001">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://healis.eu/ns/test1/addressbook#addr001">
+    <rdf:type rdf:resource="http://healis.eu/ns/test1/addressbook#address"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://healis.eu/ns/test1/addressbook#addr001">
+    <ab:street>123 Maple Rd</ab:street>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://healis.eu/ns/test1/addressbook#addr001">
+    <ab:city>Springfield</ab:city>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://healis.eu/ns/test1/addressbook#addr001">
+    <ab:postalCode>12345</ab:postalCode>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://healis.eu/ns/test1/addressbook#i0432">
+    <ab:hasAddress rdf:resource="http://healis.eu/ns/test1/addressbook#addr001"/>
+  </rdf:Description>
+</rdf:RDF>
